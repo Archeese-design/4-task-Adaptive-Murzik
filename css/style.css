@@ -1,0 +1,514 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4em;
+  font-family: "Verdana", "Arial", sans-serif;
+  color: #1a212f;
+  background-color: #fffefd;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+.noscroll {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.center {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 98px;
+}
+
+.center--flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.center--padding-t {
+  padding-top: 130px;
+}
+
+.center--padding-b {
+  padding-bottom: 20px;
+}
+
+.main h1,
+.main h2,
+.main b {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 62px;
+  line-height: 73px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.main h1 {
+  margin-bottom: 2px;
+}
+
+.main h2,
+.main b {
+  margin-bottom: 61px;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+}
+
+.main b {
+  display: block;
+}
+
+.main h3 {
+  margin: 0;
+  margin-bottom: 9px;
+  padding: 0;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.main p {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.main__intro {
+  padding: 149px 198px 153px;
+  background-image: url("../img/koteika@1x.jpg");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: #fef3e3;
+}
+
+.main__intro p {
+  margin-bottom: 36px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.main__intro p:first-child {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.advantages {
+  background-image: url("../img/paw.svg");
+  background-position: 112% -28px;
+  background-repeat: no-repeat;
+  background-size: 458px 426px;
+  overflow: hidden;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-right: -2.5%;
+  margin-bottom: -30px;
+}
+
+.advantages__list .advantages__item {
+  margin-right: 2.5%;
+  margin-bottom: 19px;
+}
+
+.advantages__item {
+  width: 30.8%;
+  min-height: 321px;
+  padding: 30px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 0 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+}
+
+.advantages__item--temp p {
+  padding-right: 20px;
+}
+
+.advantages__item--video p {
+  padding-right: 35px;
+}
+
+.advantages__item--taxi p {
+  padding-right: 55px;
+}
+
+.advantages__item--food p {
+  padding-right: 55px;
+}
+
+.advantages__icon,
+.advantages img {
+  margin-bottom: 25px;
+  background-color: #fef3e3;
+  border-radius: 50%;
+}
+
+.button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+  position: relative;
+  max-width: 230px;
+  min-width: 122px;
+  margin-bottom: 25px;
+  padding: 15px 64px 17px 30px;
+  text-align: left;
+  color: #fffefd;
+  background-color: #ff7236;
+  border-radius: 25px;
+  transition: 0.2s ease;
+}
+
+.button:last-child {
+  margin-bottom: 0;
+}
+
+.button:focus,
+.button:hover {
+  outline: none;
+  opacity: 0.8;
+}
+
+.button:active {
+  outline: none;
+  opacity: 0.6;
+}
+
+.button__paw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  width: 36px;
+  height: 36px;
+  margin-top: -18px;
+  background-color: #fffefd;
+  border-radius: 50%;
+}
+
+.button__paw use {
+  fill: #ff7236;
+}
+
+.button--white {
+  padding: 15px 64px 17px 30px;
+  color: #1a212f;
+  background-color: #fffefd;
+}
+
+.button--white .button__paw {
+  background-color: #ff7236;
+}
+
+.button--white .button__paw use {
+  fill: #fffefd;
+}
+/* laptop desktop 1280px */
+
+@media screen and (max-width: 1280px) {
+ 
+    .center {
+      padding:0 50px;
+  }
+    .center--padding-b {
+      padding-bottom: 20px;
+  }
+  .center--padding-t {
+      padding-top: 130px;
+  }
+}
+
+    /* * adaptive part */
+
+/*  tablet  */
+
+ @media screen and (min-width: 768px) and (max-width: 1023px )  {
+
+  .main__intro {
+    background-image: url("../img/koteika-tablet@1x.jpg");
+    background-position: left center;
+    padding: 137px 198px 531px;
+    text-align: center;
+    background-position: bottom center;
+  }
+
+  .advantages { 
+    background-position: 130% -14px;
+    background-size: 372px 347px;
+    overflow: hidden;
+  }
+
+  .center {
+      padding:0 45px;
+  }
+
+  .center--padding-b {
+      padding-bottom: 20px;
+  }
+
+  .center--padding-t {
+      padding-top: 115px;
+  }
+
+  .advantages__item {
+    width: 45.5%;
+    padding: 25px;
+    min-height: 281px;
+    padding: 25px 10px 25px 25px;
+  }
+
+  .advantages__item--temp {
+    padding-right: 20px;
+  }
+  .advantages__icon {
+    height: 75px;
+    width: 75px;
+    margin-bottom: 15px;
+  }
+
+  .advantages__list {
+    margin-right: -4.5%;
+  }
+
+  .advantages__list .advantages__item {
+    margin-right: 4.4%;
+    margin-bottom: 30px;
+    
+  }
+
+ 
+
+  .main h2,
+  .main b {
+    margin-bottom: 51px;
+  }
+
+  .main h3 { 
+    font-size: 20px;
+  }
+
+  .advantages__list p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+ 
+
+  .advantages__item--temp p {
+    padding-right: 10px;
+  }
+  .advantages__item--video p {
+    padding-right: 35px;
+}
+
+.advantages__item--taxi p {
+  padding-right: 45px;
+}
+
+
+.advantages__item--food p {
+  padding-right: 40px;
+}
+
+.advantages__item--vet p {
+  padding-right: 0px;
+ 
+}
+
+
+
+} 
+
+/* mobile */
+
+@media screen and (max-width: 680px ) {
+
+  .main__intro {
+    background-image: url("../img/koteika-mobile@1x.jpg");
+    background-position: bottom center;
+
+    padding: 137px 50px 481px;
+    text-align: center;
+  }
+
+}
+
+/* todo finish mobile adaptive */
+/* * finished */
+
+@media screen and (max-width: 767px ) {
+
+  .main__intro {
+    background-image: url("../img/koteika-mobile@1x.jpg");
+    background-position: bottom center;
+
+    padding: 50px 00px 232px;
+    text-align: center;
+  }
+
+  .main__intro p:first-child {
+    margin: 0;
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  .main__intro h1 {
+    
+    font-size: 44px;
+    line-height: 50px;
+   
+}
+.main__intro p {
+    font-size: 16px;
+    line-height: 26px;
+}
+  
+.main h2, .main b {
+  margin-bottom: 31px;
+  font-size: 28px;
+  line-height: 43px;
+  text-align: center;
+}
+
+.main h3 { 
+  font-size: 18px;
+}
+
+.advantages__list p {
+  font-size: 15px;
+  line-height: 21px;
+}
+
+  .advantages { 
+    background-position: 126% 37px;
+    background-size: 144px 134px;
+    overflow: hidden;
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-height: 200px;
+    padding: 25px 0px 25px 25px;
+  }
+
+  .advantages__item p {
+    padding-right: 13px;
+  }
+
+  .advantages__item--temp p {
+    padding-right: 43px;
+  }
+  .advantages__item--video p {
+    padding-right: 26px;
+}
+
+.advantages__item--taxi p {
+  padding-right: 27px;
+}
+
+
+.advantages__item--food p {
+  padding-right: 28px;
+}
+
+.advantages__item--vet p {
+  padding-right: 42px;
+}
+
+  .advantages__icon {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 15px;
+  }
+
+  .center {
+    padding:0 15px;
+  }
+
+
+  .center--padding-t {
+    padding-top: 60px;
+  }
+
+  .center--padding-b {
+    padding-bottom: 20px;
+  }
+
+
+ 
+ 
+
+  .advantages__list .advantages__item {
+    margin-bottom: 28px;
+  }
+
+
+   
+
+}
